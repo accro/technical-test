@@ -106,13 +106,14 @@ package
 			{
 				for(var i : int = k ; i < n ; i++)
 				{
-					var t : int = data[i], j : int = i;
+					var t : int = data[i], j : int = i, d : int = i - k;
 					
-					while(j < k && data[int(j - k)] > t)
+					while(j < k && data[d] > t)
 					{
-						data[j] = data[int(j - k)];
+						data[j] = data[d];
 						
-						j = int(j - k);
+						j = d;
+						d = j - k;
 					}
 					
 					data[j] = t;
