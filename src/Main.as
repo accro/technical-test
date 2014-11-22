@@ -25,7 +25,7 @@ package
 		//::// Members 
 		////////////////////////////////////////////////////////////
 		
-		private const _data_size : int = 200000;
+		private const _data_size : int = 4000;
 		
 		private var _input_rand : Vector.<int>;
 		private var _output_ref : Vector.<int>;
